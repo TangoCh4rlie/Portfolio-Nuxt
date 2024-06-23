@@ -1,11 +1,8 @@
-<script setup lang="ts">
-definePageMeta({
-  layout: false,
-})
-</script>
-
 <template>
-  <div>
-    <h1>Elouan Reymond</h1>
-  </div>
+    <div>
+        <bodyTitle id="top" />
+        <div class="w-3/5 mx-auto">
+            <languageLanguages id="languages" />
+        </div>
+    </div>
 </template>
