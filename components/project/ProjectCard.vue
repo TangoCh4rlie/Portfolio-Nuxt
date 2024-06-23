@@ -71,15 +71,17 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
                 height="600"
             />
             <div class="w-1/2 px-12">
-                <UTooltip
+                <div class="flex items-center">
+                    <UTooltip
                     text="Application jouable dès maintenant !"
                     :popper="{ placement: 'top' }"
                 >
                     <h3 class="text-4xl mb-6">
                         {{ project.title }}
-                        <span class="text"> - {{ project.date }}</span>
                     </h3>
                 </UTooltip>
+                <UBadge class="ml-4 mb-6" color="red" variant="subtle">{{ project.date }}</UBadge>
+                </div>
                 <p>{{ project.description }}</p>
                 <div class="flex m-6">
                     <div class="w-1/2 flex items-center justify-start gap-1">
