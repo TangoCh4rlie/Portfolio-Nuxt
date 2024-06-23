@@ -4,8 +4,11 @@ import languagesJson from "/public/json/languages.json";
 
 const languages: Language[] = languagesJson;
 
-const selectedType: string = ref("language");
+const selectedType: string = ref("Language");
 const searchedLanguage = ref(null);
+const differentTypes = computed(() => {
+    return Array.from(new Set(languages.map((language) => language.type)));
+});
 
 const filteredLanguages = computed(() => {
     // if (searchedLanguage.value !== null) {
@@ -33,37 +36,25 @@ const getButtonVariant = computed(() => {
 
 <template>
     <div>
-        <h1 class="text-gray-400 text-4xl my-4">Languages</h1>
+        <h2 class="text-gray-400 text-4xl my-4">Languages</h2>
         <!-- <UInputMenu
             v-model="searchedLanguage"
             :options="languages"
             placeholder="Select a language"
             option-attribute="name"
         /> -->
+        <UAlert
+            icon="i-heroicons-language"
+            description="Ici vous pouvez trouver les langages et technos que j'ai été amené à utiliser."
+            color="purple"
+            variant="outline"
+        />
         <div class="flex space-x-2 my-3">
-            <UButton
+            <UButton v-for="type in differentTypes"
                 color="primary"
-                :variant="getButtonVariant('language')"
-                @click="selectedType = 'language'"
-                >Languages</UButton
-            >
-            <UButton
-                color="primary"
-                :variant="getButtonVariant('framework')"
-                @click="selectedType = 'framework'"
-                >Framework</UButton
-            >
-            <UButton
-                color="primary"
-                :variant="getButtonVariant('outil')"
-                @click="selectedType = 'outil'"
-                >Outils</UButton
-            >
-            <UButton
-                color="primary"
-                :variant="getButtonVariant('devops')"
-                @click="selectedType = 'devops'"
-                >DevOps</UButton
+                :variant="getButtonVariant(type)"
+                @click="selectedType = type"
+                >{{ type }}</UButton
             >
         </div>
         <div class="flex flex-wrap justify-left">

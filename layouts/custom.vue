@@ -1,4 +1,14 @@
 <script setup lang="ts">
+const colorMode = useColorMode();
+const isDark = computed({
+    get() {
+        return colorMode.value === "dark";
+    },
+    set() {
+        colorMode.preference = colorMode.value === "dark" ? "light" : "dark";
+    },
+});
+
 const links = [
     [
         {
@@ -8,24 +18,33 @@ const links = [
         },
         {
             label: "Languages",
-            icon: "i-heroicons-cube-transparent",
+            icon: "i-heroicons-language",
             to: "#languages",
         },
         {
             label: "Projects",
-            icon: "i-heroicons-photograph",
+            icon: "i-heroicons-wrench-screwdriver",
         },
     ],
 	[
 		{
 			label: "Portfolio",
-			icon: "i-heroicons-photograph",
+			icon: "i-heroicons-book-open",
 		}
 	],
     [
         {
             label: "Contact me",
             icon: "i-heroicons-phone",
+        },
+    ],
+    [
+        {
+            label: "Switch theme",
+            icon: "i-heroicons-arrows-right-left",
+            // TODO: fixer ca
+            // icon: computed(() => (isDark.value ? "i-heroicons-moon-solid" : "i-heroicons-sun-solid")),
+            click: () => (isDark.value = !isDark.value),
         },
     ],
 ];
@@ -46,11 +65,7 @@ const links = [
                     </template>
                 </UPopover>
             </div>
-            <headerCustomHeader />
         </main>
-        <footer>
-            <slot name="footer"> Default footer content </slot>
-        </footer>
     </div>
 </template>
 
