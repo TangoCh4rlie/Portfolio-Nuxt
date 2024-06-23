@@ -1,10 +1,14 @@
 <script setup lang="ts">
+import type { Language } from "~/types/language";
 import projectsJson from "/public/json/projects.json";
+import languagesJson from "/public/json/languages.json";
+import type { Project } from "~/types/project";
 
-const projects: Projets[] = projectsJson;
+const projects: Project[] = projectsJson;
+const languages: Language[] = languagesJson;
 
 const differentTags: string[] = projects.reduce((acc, project) => {
-    project.tags.forEach((tags) => {
+    project.tags.forEach((tags: string) => {
         if (!acc.includes(tags)) {
             acc.push(tags);
         }
@@ -13,7 +17,7 @@ const differentTags: string[] = projects.reduce((acc, project) => {
 }, [] as string[]);
 differentTags.push("All");
 
-const selectedTag: string = ref("All");
+const selectedTag: Ref<string> = ref("All");
 
 const getButtonVariant = computed(() => {
     return (tags: string) => {
@@ -29,7 +33,7 @@ const getButtonVariant = computed(() => {
         <UAlert
             icon="i-heroicons-wrench-screwdriver"
             description="Voici quelques projets que j'ai réalisé ou auxquels j'ai participé."
-            color="orange"
+            color="amber"
             variant="outline"
         />
         <div class="flex space-x-2 my-3">
@@ -45,6 +49,7 @@ const getButtonVariant = computed(() => {
                 v-for="project in projects"
                 :key="project.title"
                 :project="project"
+                :languages="languages"
             />
         </div>
     </div>

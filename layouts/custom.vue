@@ -24,6 +24,12 @@ const links = [
         {
             label: "Projects",
             icon: "i-heroicons-wrench-screwdriver",
+            to: "#projects",
+        },
+        {
+            label: "Contact me",
+            icon: "i-heroicons-phone",
+            to: "#contact",
         },
     ],
 	[
@@ -32,12 +38,6 @@ const links = [
 			icon: "i-heroicons-book-open",
 		}
 	],
-    [
-        {
-            label: "Contact me",
-            icon: "i-heroicons-phone",
-        },
-    ],
     [
         {
             label: "Switch theme",

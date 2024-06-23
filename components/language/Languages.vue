@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import LanguageCard from "./LanguageCard.vue";
 import languagesJson from "/public/json/languages.json";
+import type { Language } from "~/types/language";
 
 const languages: Language[] = languagesJson;
 
-const selectedType: string = ref("Language");
+const selectedType: Ref<string> = ref("Language");
 const searchedLanguage = ref(null);
 const differentTypes = computed(() => {
     return Array.from(new Set(languages.map((language) => language.type)));

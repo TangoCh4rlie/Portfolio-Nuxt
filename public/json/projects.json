@@ -1,24 +1,24 @@
 [
     {
         "title": "Serrata",
-        "description": "Un projet de jeu de tapage de drapeaux réalisé entre amis",
+        "description": "Un projet de jeu de tapage de drapeaux réalisé entre amis.",
         "img": {
             "path": "projects/logo_super_sympa.png"
         },
         "link": "https://serrata.super-sympa.fr",
-        "repo": "https://github/serrata",
+        "repo": "https://github.com/serrataapp",
         "tech": ["Typescript", "Express", "Postgres", "React"],
         "tags": ["Perso", "Jeux"],
         "date": "2023"
     },
     {
-        "title": "Nuit de l'info 2024",
-        "description": "Projet collaboratif réalisé lors de la nuit de l'info 2024",
+        "title": "Nuit de l'info",
+        "description": "Projet collaboratif réalisé lors de la nuit de l'info 2024.",
         "img": {
             "path": "avatar.webp"
         },
         "link": "https://serrata.super-sympa.fr",
-        "repo": "https://github/serrata",
+        "repo": "https://github.com/serrataapp",
         "tech": ["Javascript", "Svelte", "Kubernetes"],
         "tags": ["Perso", "Jeux"],
         "date": "2024"

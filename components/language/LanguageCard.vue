@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import type { Language } from "~/types/language";
 const props = defineProps<{
     language: Language;
 }>();
