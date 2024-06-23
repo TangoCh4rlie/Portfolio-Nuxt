@@ -66,6 +66,10 @@ const links = [
                 </UPopover>
             </div>
         </main>
+        <footer class="flex flex-col my-24 items-center">
+            <p class="mb-6">Ce site a été réaliser avec Nuxt.js</p>
+            <p>Merci d'avoir lu jusqu'ici &#128512 !</p>
+        </footer>
     </div>
 </template>
 

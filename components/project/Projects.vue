@@ -29,11 +29,11 @@ const getButtonVariant = computed(() => {
 
 <template>
     <div>
-        <h2 class="text-gray-400 text-4xl my-4">Projets</h2>
+        <h2 class="dark:text-gray-400 text-4xl my-4">Projets</h2>
         <UAlert
             icon="i-heroicons-wrench-screwdriver"
             description="Voici quelques projets que j'ai réalisé ou auxquels j'ai participé."
-            color="amber"
+            color="rose"
             variant="outline"
         />
         <div class="flex space-x-2 my-3">

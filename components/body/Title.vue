@@ -25,9 +25,12 @@ onMounted(() => {
         </div>
         <div class="w-3/5 mx-auto p-4 border dark:border-gray-600 rounded-lg dark:bg-zinc-900">
             <p>
-                Salut moi c'est Elouan, <br /> <br /> 
-				Je suis en étude de développement informatique à la l'IUT Claude Bernard de Lyon 1. <br /><br /> 
-				Passionné d'informatique depuis maintenant 2 ans, je suis toujours à la recherche de nouveaux projets à réaliser. <br />
+                Salut moi c'est Elouan <br /> <br /> 
+				Passionné d'informatique depuis maintenant 2 ans, je suis en étude de développement informatique à l'IUT Claude Bernard de Lyon 1. <br /><br /> 
+				Très curieux et polyvalent, je suis toujours à la recherche de nouveaux projets à réaliser. N'ayant pas de langage favori à proprement parlé, j'adore m'essayer à de nouvelles techno pour découvrir de nouvelles choses. J'ai d'ailleurs utilisé pour l'occasion de ce portfolio le framework Nuxt.js pour la première fois.<br /><br />
+                Je ne suis pas frileux à l'idée de travailler en équipe, bien au contraire, j'adore ça.<br /><br />
+                À côté de l'informatique, j'aime beaucoup écouter de la musique (du rock au classique en passant la techno), faire du volley et de la randonnée.<br /><br />
+                Voici donc mon portfolio que j'ai réalisé avec beaucoup de plaisir, j'espère qu'il vous plaira.
             </p>
 			<div class="mt-4 flex flex-wrap space-x-2">
 				<UBadge color="violet" variant="subtle" label="Etudiant" />

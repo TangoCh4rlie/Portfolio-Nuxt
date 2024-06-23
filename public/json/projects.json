@@ -7,7 +7,7 @@
         },
         "link": "https://serrata.super-sympa.fr",
         "repo": "https://github.com/serrataapp",
-        "tech": ["Typescript", "Express", "Postgres", "React"],
+        "tech": ["TypeScript", "Express", "PostgreSQL", "React"],
         "tags": ["Perso", "Jeux"],
         "date": "2023"
     },
@@ -17,9 +17,9 @@
         "img": {
             "path": "avatar.webp"
         },
-        "link": "https://serrata.super-sympa.fr",
-        "repo": "https://github.com/serrataapp",
-        "tech": ["Javascript", "Svelte", "Kubernetes"],
+        "link": "https://github.com/EQUIPE-SUPER-SYMPA-Nuit-de-l-info/FrontNDL",
+        "repo": "https://github.com/EQUIPE-SUPER-SYMPA-Nuit-de-l-info/FrontNDL",
+        "tech": ["JavaScript", "Svelte", "Kubernetes"],
         "tags": ["Perso", "Jeux"],
         "date": "2024"
     }
