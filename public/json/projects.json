@@ -8,8 +8,20 @@
         "link": "https://serrata.super-sympa.fr",
         "repo": "https://github.com/serrataapp",
         "tech": ["TypeScript", "Express", "PostgreSQL", "React"],
-        "tags": ["Perso", "Jeux"],
+        "tags": ["Jeux", "Equipe"],
         "date": "2023"
+    },
+    {
+        "title": "Portfolio",
+        "description": "J'ai réalisé ce portfolio dans avec un framework que je ne connaissais pas pour découvrir de nouvelles choses. J'ai utilisé Nuxt ainsi que sa librairie de composant NuxtUI pour le style graphique de mon portfolio",
+        "img": {
+            "path": "avatar.webp"
+        },
+        "link": "https://portfolio-elouan-reymond.vercel.app",
+        "repo": "https://github.com/TangoCh4rlie/PortfolioNuxt",
+        "tech": ["NuxtJs", "TypeScript", "Tailwindcss"],
+        "tags": ["Perso", "Ecole"],
+        "date": "2024"
     },
     {
         "title": "Nuit de l'info",
@@ -20,7 +32,7 @@
         "link": "https://github.com/EQUIPE-SUPER-SYMPA-Nuit-de-l-info/FrontNDL",
         "repo": "https://github.com/EQUIPE-SUPER-SYMPA-Nuit-de-l-info/FrontNDL",
         "tech": ["JavaScript", "Svelte", "Kubernetes"],
-        "tags": ["Perso", "Jeux"],
+        "tags": ["Equipe", "Evenement"],
         "date": "2024"
     }
 ]
