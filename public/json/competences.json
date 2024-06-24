@@ -8,7 +8,7 @@
         "description": "Je sais proposer des applications informatiques optimisées en fonction du temps d’exécution, de la précision et de la consommation de ressources, en modélisant des situations complexes, en utilisant des algorithmes usuels, et en justifiant les choix et les résultats"
     },
     {
-        "competence": "Administer",
+        "competence": "Administrer",
         "description": "Je sais installer, configurer, maintenir et optimiser des infrastructures, services et réseaux informatiques en sécurisant le système d’information, en appliquant les normes et bonnes pratiques, en offrant une qualité de service optimale et en assurant la continuité d'activité."
     },
     {
@@ -17,7 +17,7 @@
     },
     {
         "competence": "Conduire",
-        "description": "Je sais organiser et piloter un projet informatique en satisfaisant les besoins des utilisateurs, en respectant les normes et règles juridiques, et en communiquant efficacement avec les acteurs du projet."
+        "description": "Je sais organiser et piloter un projet informatique en satisfaisant les besoins des utilisateurs, en respectant les normes, et en communiquant efficacement avec les acteurs du projet."
     },
     {
         "competence": "Collaborer",

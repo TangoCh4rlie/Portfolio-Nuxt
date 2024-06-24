@@ -28,7 +28,7 @@ const filteredProject = computed(() => {
             v-for="item in competences"
             :key="item.competence"
             href="#projects"
-            class="block p-4 border dark:border-gray-600 rounded-lg dark:bg-zinc-900 my-2 cursor-pointer"
+            class="block p-4 border dark:border-gray-600 rounded-lg dark:bg-zinc-900 bg-zinc-100 hover:bg-zinc-200 dark:hover:bg-zinc-800 my-2 cursor-pointer"
             @click="selectedComp = item.competence"
         >
             <h3 class="text-2xl dark:text-green-500">{{ item.competence }}</h3>

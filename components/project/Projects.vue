@@ -8,16 +8,18 @@ const projects: Project[] = projectsJson;
 const languages: Language[] = languagesJson;
 
 const differentTags: string[] = projects.reduce((acc, project) => {
-    project.tags.forEach((tags: string) => {
-        if (!acc.includes(tags)) {
-            acc.push(tags);
-        }
-    });
+    if (project.competence === undefined) {
+        project.tags.forEach((tags: string) => {
+            if (!acc.includes(tags)) {
+                acc.push(tags);
+            }
+        });
+    }
     return acc;
 }, [] as string[]);
 differentTags.push("All");
 
-const selectedTag: Ref<string> = ref("All");
+const selectedTag: Ref<string> = ref("Perso");
 
 const getButtonVariant = computed(() => {
     return (tags: string) => {
@@ -27,9 +29,9 @@ const getButtonVariant = computed(() => {
 
 const filteredProject = computed(() => {
     if (selectedTag.value === "All") {
-        return projects;
+        return projects.filter((project) => project.competence === undefined);
     }
-    return projects.filter((project) => project.tags.includes(selectedTag.value));
+    return projects.filter((project) => project.tags.includes(selectedTag.value) && project.competence === undefined );
 })
 
 </script>
@@ -40,7 +42,7 @@ const filteredProject = computed(() => {
         <UAlert
             icon="i-heroicons-wrench-screwdriver"
             description="Voici quelques projets que j'ai réalisé ou auxquels j'ai participé."
-            color="rose"
+            color="blue"
             variant="outline"
         />
         <div class="flex space-x-2 my-3">

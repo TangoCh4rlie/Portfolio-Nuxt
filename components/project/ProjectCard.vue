@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Language } from "~/types/language";
 import type { Project } from "~/types/project";
-import { getRandomColor } from "~/utils/colors";
+import { getColor } from "~/utils/colors";
 
 const props = defineProps<{
     project: Project;
@@ -23,9 +23,10 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
             class="flex flex-col w-full h-full justify-center items-center absolute gap-10"
         >
             <div
-                class="border dark:border-gray-600 rounded-xl dark:bg-zinc-900 opacity-100"
+                v-if="project.link !== undefined"
+                class="border dark:border-gray-600 rounded-xl dark:bg-zinc-900 bg-zinc-100 dark:hover:bg-zinc-800 opacity-100"
             >
-                <a :href="project.link">
+                <a :href="project.link" target="_blank">
                     <svg
                         fill="none"
                         viewBox="0 0 24 24"
@@ -42,9 +43,10 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
                 </a>
             </div>
             <div
-                class="border dark:border-gray-600 rounded-xl dark:bg-zinc-900 opacity-100"
+                v-if="project.repo !== undefined"
+                class="border dark:border-gray-600 rounded-xl dark:bg-zinc-900 bg-zinc-100 dark:hover:bg-zinc-800 opacity-100"
             >
-                <a :href="project.repo">
+                <a :href="project.repo" target="_blank">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="20"
@@ -88,10 +90,12 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
                 </div>
                 <p>{{ project.description }}</p>
                 <div class="flex m-6">
-                    <div class="w-1/2 flex flex-wrap items-center justify-end gap-1 mr-2">
+                    <div
+                        class="w-1/2 flex flex-wrap items-center justify-end gap-1 mr-2"
+                    >
                         <div v-for="tag in props.project.tags" class="flex">
                             <UBadge
-                                :color="getRandomColor()"
+                                :color="getColor(tag)"
                                 variant="subtle"
                                 >{{ tag }}</UBadge
                             >

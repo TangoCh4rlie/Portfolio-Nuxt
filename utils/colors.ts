@@ -1,21 +1,21 @@
 export enum UiColor {
-    red,
-    orange,
-    amber,
-    yellow,
-    lime,
-    green,
-    emerald,
-    teal,
-    cyan,
-    sky,
-    blue,
-    indigo,
-    violet,
-    purple,
-    fuchsia,
-    pink,
-    rose,
+    red = "Réaliser",
+    orange = "Optimiser",
+    amber = "Jeux",
+    yellow = "",
+    lime = "",
+    green = "Administrer",
+    emerald = "Equipe",
+    teal = "",
+    cyan = "Gérer",
+    sky = "Perso",
+    blue = "",
+    indigo = "",
+    violet = "Conduire",
+    purple = "Ecole",
+    fuchsia = "",
+    pink = "Collaborer",
+    rose = "Evenement",
 }
 
 export function getRandomColor(): string {
@@ -23,3 +23,8 @@ export function getRandomColor(): string {
     const randomIndex = Math.floor(Math.random() * colors.length);
     return colors[randomIndex];
 }
+
+export function getColor(word: string): string | undefined {
+    const color = Object.entries(UiColor).find(([, value]) => value === word);
+    return color ? color[0] : undefined;
+  }

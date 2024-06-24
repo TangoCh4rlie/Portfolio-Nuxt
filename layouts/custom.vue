@@ -14,28 +14,29 @@ const links = [
         {
             label: "Home",
             icon: "i-heroicons-home",
-            to: "#top",
+            to: "/#top",
         },
         {
             label: "Languages",
             icon: "i-heroicons-language",
-            to: "#languages",
+            to: "/#languages",
         },
         {
             label: "Projects",
             icon: "i-heroicons-wrench-screwdriver",
-            to: "#projects",
+            to: "/#projects",
         },
         {
             label: "Contact me",
             icon: "i-heroicons-phone",
-            to: "#contact",
+            to: "/#contact",
         },
     ],
 	[
 		{
 			label: "Compétences",
 			icon: "i-heroicons-book-open",
+            to: "/competences"
 		}
 	],
     [
@@ -67,7 +68,7 @@ const links = [
             </div>
         </main>
         <footer class="flex flex-col my-24 items-center">
-            <p class="mb-6">Ce site a été réaliser avec Nuxt.js</p>
+            <p class="mb-6">Ce site a été réalisé avec Nuxt.js</p>
             <p>Merci d'avoir lu jusqu'ici &#128512 !</p>
         </footer>
     </div>

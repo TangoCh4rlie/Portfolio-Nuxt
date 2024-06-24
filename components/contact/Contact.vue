@@ -4,14 +4,15 @@
         <div class="grid grid-cols-2 gap-4 h-64">
             <a
                 href="mailto:elouanreymond@tutanota.com"
-                class="col-span-1 row-span-2 border dark:border-gray-600 rounded-lg dark:bg-zinc-900 flex flex-col items-center justify-center"
+                class="col-span-1 row-span-2 border dark:border-gray-600 rounded-lg dark:bg-zinc-900 bg-zinc-100 flex flex-col items-center justify-center"
             >
                 <UIcon name="i-heroicons-envelope" class="size-12 mb-3" />
                 <p>elouanreymond@tutanota.com</p>
             </a>
             <a
                 href="https://www.linkedin.com/in/elouan-reymond-858175251/"
-                class="col-span-1 border dark:border-gray-600 rounded-lg dark:bg-zinc-900 flex items-center justify-center"
+                target="_blank"
+                class="col-span-1 border dark:border-gray-600 rounded-lg dark:bg-zinc-900 bg-zinc-100 flex items-center justify-center"
             >
                 <div class="mr-4">
                     <svg
@@ -31,7 +32,8 @@
             </a>
             <a
                 href="https://github.com/TangoCh4rlie"
-                class="col-span-1 row-span-2 border dark:border-gray-600 rounded-lg dark:bg-zinc-900 flex flex-col items-center justify-center"
+                target="_blank"
+                class="col-span-1 row-span-2 border dark:border-gray-600 rounded-lg dark:bg-zinc-900 bg-zinc-100 flex flex-col items-center justify-center"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -49,7 +51,7 @@
                 <p>TangoCh4rlie</p>
             </a>
             <a
-                class="col-span-1 border dark:border-gray-600 rounded-lg dark:bg-zinc-900 flex items-center justify-center"
+                class="col-span-1 border dark:border-gray-600 rounded-lg dark:bg-zinc-900 bg-zinc-100 flex items-center justify-center"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
