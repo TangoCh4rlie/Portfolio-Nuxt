@@ -45,7 +45,6 @@ const filteredProject = computed(() => {
         />
         <div class="flex space-x-2 my-3">
             <UButton v-for="tag in differentTags"
-                color="cyan"
                 :variant="getButtonVariant(tag)"
                 @click="selectedTag = tag"
                 >{{ tag }}</UButton

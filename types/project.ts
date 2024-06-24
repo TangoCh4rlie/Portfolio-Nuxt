@@ -11,4 +11,5 @@ export interface Project {
     tech: string[],
     tags: string[],
     date: string,
+    competence?: boolean
 }

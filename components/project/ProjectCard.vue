@@ -15,7 +15,6 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
         })
         .filter((tech) => tech !== undefined);
 });
-
 </script>
 
 <template>
@@ -72,31 +71,37 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
             />
             <div class="w-1/2 px-12">
                 <div class="flex items-center">
-                    <UTooltip
+                    <!-- <UTooltip
                     text="Application jouable dès maintenant !"
                     :popper="{ placement: 'top' }"
                 >
                     <h3 class="text-4xl mb-6">
                         {{ project.title }}
                     </h3>
-                </UTooltip>
-                <UBadge class="ml-4 mb-6" color="red" variant="subtle">{{ project.date }}</UBadge>
+                </UTooltip> -->
+                    <h3 class="text-4xl mb-6">
+                        {{ project.title }}
+                    </h3>
+                    <UBadge class="ml-4 mb-6" color="red" variant="subtle">{{
+                        project.date
+                    }}</UBadge>
                 </div>
                 <p>{{ project.description }}</p>
                 <div class="flex m-6">
-                    <div class="w-1/2 flex items-center justify-start gap-1">
+                    <div class="w-1/2 flex flex-wrap items-center justify-end gap-1 mr-2">
                         <div v-for="tag in props.project.tags" class="flex">
-                                <UBadge :color="getRandomColor()" variant="subtle"
-                                    >{{ tag }}</UBadge
-                                >
+                            <UBadge
+                                :color="getRandomColor()"
+                                variant="subtle"
+                                >{{ tag }}</UBadge
+                            >
                         </div>
                     </div>
 
-                    <UDivider
-                        icon="i-heroicons-code-bracket"
-                        orientation="vertical"
-                    />
-                    <div class="w-1/2 flex items-center justify-center gap-3 ml-4">
+                    <UDivider orientation="vertical" />
+                    <div
+                        class="w-1/2 flex flex-wrap items-center justify-start gap-3 ml-2"
+                    >
                         <div v-for="tech in technoIcons ?? []">
                             <svg class="w-9 h-9" viewBox="0 0 128 128">
                                 <path

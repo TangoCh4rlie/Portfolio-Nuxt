@@ -34,5 +34,33 @@
         "tech": ["JavaScript", "Svelte", "Kubernetes"],
         "tags": ["Equipe", "Evenement"],
         "date": "2024"
+    },
+
+
+    {
+        "title": "Projet SAE Peninsule",
+        "description": "Projet réalisé ",
+        "img": {
+            "path": "projects/peninsule.png"
+        },
+        "link": "https://forge.univ-lyon1.fr/p2201616/sae-s3",
+        "repo": "https://forge.univ-lyon1.fr/p2201616/sae-s3",
+        "tech": ["JavaScript", "Svelte", "PostgreSQL", "Vercel"],
+        "tags": ["Conduire", "Réaliser", "Collaborer"],
+        "date": "2024",
+        "competence": true
+    },
+    {
+        "title": "Projet SAE Annuaire",
+        "description": "Projet collaboratif réalisé lors de la nuit de l'info 2024.",
+        "img": {
+            "path": "projects/peninsule.png"
+        },
+        "link": "https://forge.univ-lyon1.fr/p2201616/sae-s3",
+        "repo": "https://forge.univ-lyon1.fr/p2201616/sae-s3",
+        "tech": ["JavaScript", "Svelte", "PostgreSQL", "Vercel"],
+        "tags": ["Conduire", "Réaliser", "Collaborer"],
+        "date": "2024",
+        "competence": true
     }
 ]
