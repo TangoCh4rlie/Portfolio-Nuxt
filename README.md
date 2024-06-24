@@ -1,6 +1,4 @@
 # TODO
-- metadata
-
-- passer les images en PNG
+- animations
 - faire en fr/en
 - responsive
