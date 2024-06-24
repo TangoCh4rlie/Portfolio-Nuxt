@@ -17,7 +17,7 @@ onMounted(() => {
         <div id="typewriter" class="text-9xl text-center m-24 font-bold"></div>
         <div class="text-center mb-8">
             <NuxtImg
-                src="/img/avatar.webp"
+                src="/img/Axopen.webp"
                 alt="Avatar"
                 width="100"
                 height="100"
