@@ -15,6 +15,10 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
         })
         .filter((tech) => tech !== undefined);
 });
+
+// function getImageUrl(name: string) {
+//   return new URL(`~/assets/images/${name}`, import.meta.url).href
+// }
 </script>
 
 <template>
@@ -94,11 +98,9 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
                         class="w-1/2 flex flex-wrap items-center justify-end gap-1 mr-2"
                     >
                         <div v-for="tag in props.project.tags" class="flex">
-                            <UBadge
-                                :color="getColor(tag)"
-                                variant="subtle"
-                                >{{ tag }}</UBadge
-                            >
+                            <UBadge :color="getColor(tag)" variant="subtle">{{
+                                tag
+                            }}</UBadge>
                         </div>
                     </div>
 
