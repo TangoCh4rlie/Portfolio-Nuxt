@@ -34,7 +34,7 @@ const links = [
     ],
 	[
 		{
-			label: "Portfolio",
+			label: "Compétences",
 			icon: "i-heroicons-book-open",
 		}
 	],

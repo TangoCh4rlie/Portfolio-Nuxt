@@ -96,7 +96,7 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
                         icon="i-heroicons-code-bracket"
                         orientation="vertical"
                     />
-                    <div class="w-1/2 flex items-center justify-center gap-3">
+                    <div class="w-1/2 flex items-center justify-center gap-3 ml-4">
                         <div v-for="tech in technoIcons ?? []">
                             <svg class="w-9 h-9" viewBox="0 0 128 128">
                                 <path

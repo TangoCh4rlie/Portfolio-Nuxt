@@ -25,6 +25,13 @@ const getButtonVariant = computed(() => {
     };
 });
 
+const filteredProject = computed(() => {
+    if (selectedTag.value === "All") {
+        return projects;
+    }
+    return projects.filter((project) => project.tags.includes(selectedTag.value));
+})
+
 </script>
 
 <template>
@@ -46,7 +53,7 @@ const getButtonVariant = computed(() => {
         </div>
         <div class="flex flex-col justify-left">
             <ProjectCard
-                v-for="project in projects"
+                v-for="project in filteredProject"
                 :key="project.title"
                 :project="project"
                 :languages="languages"
