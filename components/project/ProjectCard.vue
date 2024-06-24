@@ -24,7 +24,7 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
         >
             <div
                 v-if="project.link !== undefined"
-                class="border dark:border-gray-600 rounded-xl dark:bg-zinc-900 bg-zinc-100 dark:hover:bg-zinc-800 opacity-100"
+                class="border dark:border-gray-600 rounded-xl dark:hover:bg-zinc-800 dark:bg-zinc-900 bg-zinc-100 dark:hover:bg-zinc-800 opacity-100"
             >
                 <a :href="project.link" target="_blank">
                     <svg
@@ -44,7 +44,7 @@ const technoIcons: ComputedRef<Language[]> = computed(() => {
             </div>
             <div
                 v-if="project.repo !== undefined"
-                class="border dark:border-gray-600 rounded-xl dark:bg-zinc-900 bg-zinc-100 dark:hover:bg-zinc-800 opacity-100"
+                class="border dark:border-gray-600 rounded-xl dark:hover:bg-zinc-800 dark:bg-zinc-900 bg-zinc-100 dark:hover:bg-zinc-800 opacity-100"
             >
                 <a :href="project.repo" target="_blank">
                     <svg

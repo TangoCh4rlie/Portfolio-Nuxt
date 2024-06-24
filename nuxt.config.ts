@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 		'~/assets/css/main.css',
 	],
 	image: {
-		dir: 'public/img'
+		dir: '.'
 	},
 	colorMode: {
 		preference: 'dark'
